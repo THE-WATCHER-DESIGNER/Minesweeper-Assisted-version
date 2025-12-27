@@ -229,7 +229,6 @@ class App:
 
         move_log = []
 
-        # --- HELPER: Get Frontier Cells (for visualization) ---
         def get_frontier(board_obj):
             frontier = set()
             for r in range(self.grid_size):
@@ -621,7 +620,7 @@ class App:
                     if frontier:
                         draw_game(time_str, timer_color, show_undo, highlights=frontier, highlight_col=C_THINKING)
                         pygame.display.flip()
-                        pygame.time.delay(300) # Pause to show thinking
+                        pygame.time.delay(300)
 
                     # Get the actual move
                     move = ai.get_move(board)
@@ -674,4 +673,5 @@ class App:
             draw_game(time_str, timer_color, show_undo)
             pygame.display.flip()
             self.clock.tick(60)
+
 
