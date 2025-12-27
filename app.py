@@ -674,3 +674,4 @@ class App:
             draw_game(time_str, timer_color, show_undo)
             pygame.display.flip()
             self.clock.tick(60)
+
