@@ -75,3 +75,4 @@ class AI_Solver:
                 return (move[0], move[1], 'reveal')
         
         return None
+
